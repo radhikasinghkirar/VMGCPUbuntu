@@ -2,6 +2,7 @@
 ## GCP Linux VM - Main ##
 #########################
 
+
 # Terraform plugin for creating random ids
 resource "random_id" "instance_id" {
   byte_length = 4
@@ -16,6 +17,7 @@ sudo systemctl start apache2;
 sudo systemctl enable apache2;
 EOF
 }
+
 
 # Create VM
 resource "google_compute_instance" "vm_instance_public" {
